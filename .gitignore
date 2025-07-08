@@ -5,3 +5,11 @@
 tags
 node_modules
 __pycache__
+*.pyc
+__pycache__/
+*.swo
+*.db
+*.sqlite
+*.log
+*.bak
+*.tmp

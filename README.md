@@ -20,4 +20,4 @@ A lightweight Service Planning module for ERPNext that allows managers to schedu
 
 ---
 
-Built for demo / learning purpose by `tecteam12`
+Built for demo / learning purpose by `HazemHesham23`

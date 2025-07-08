@@ -1,41 +1,23 @@
-### Service App
+# Service App for ERPNext 🚀
 
-App For Auto Task Generation
+A lightweight Service Planning module for ERPNext that allows managers to schedule service projects with auto-generated tasks.
 
-### Installation
+## Features
+- ✅ Service Project Doctype (with schedule config)
+- ✅ Service Task (Child Table)
+- ✅ Auto task generation (Daily, Weekly, or X days)
+- ✅ Role-based & Organization-based access
+- ✅ Permission Query Conditions via server script
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+## How it Works
+1. Create a Service Project
+2. On Submit or Save → Tasks are generated automatically for the next 7 days
+3. Tasks are filtered per user role + organization
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app service_app
-```
+## Permissions Logic
+- 👤 `System Manager`, `Projects Manager` → See all
+- 👥 Others → See tasks only for their own role + company
 
-### Contributing
+---
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/service_app
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### CI
-
-This app can use GitHub Actions for CI. The following workflows are configured:
-
-- CI: Installs this app and runs unit tests on every push to `develop` branch.
-- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
-
-
-### License
-
-mit
+Built for demo / learning purpose by `tecteam12`

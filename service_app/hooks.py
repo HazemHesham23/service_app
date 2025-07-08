@@ -7,6 +7,42 @@ app_license = "mit"
 
 # Apps
 # ------------------
+#doc_events = {
+ #   "Service Project": {
+  #      "on_submit": "service_app.server_script.auto_task.on_submit"
+  #  }
+#}
+
+#permission_query_conditions = {
+ #   "Service Project": "service_app.server_script.service_task_permission.get_permission_query_conditions_for_service_project"
+#}
+
+###################
+
+
+
+# Apps
+# ------------------
+
+doc_events = {
+    "Service Project": {
+        "after_save": "service_app.server_script.auto_task.after_save"
+    }
+}
+
+
+
+permission_query_conditions = {
+    "Service Project": "service_app.server_script.service_task_permission.get_permission_query_conditions_for_service_project",
+    "Service Task": "service_app.server_script.service_task_permission.get_permission_query_conditions_for_service_task"
+}
+
+
+###############
+
+
+
+
 
 # required_apps = []
 
